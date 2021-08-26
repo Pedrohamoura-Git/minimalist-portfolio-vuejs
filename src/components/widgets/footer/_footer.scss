@@ -1,0 +1,53 @@
+@import '../../../assets/scss/index.scss';
+
+
+footer {
+  background-color: $navbar-footer-bg-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+    
+  #footer-logo { 
+    svg{
+      path { 
+        fill: $body-bg-color; 
+        transition: $transition-time;
+      }
+      &:hover {
+        path { fill: $links-color-hover-active; } 
+      }
+    } 
+  }
+
+  #footer-links a {
+    color: $links-color;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    transition: $transition-time;
+    
+    &:hover {
+      color: $links-color-hover-active;
+    }
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  
+    svg {
+      path {
+        fill: $body-bg-color;
+        transition: $transition-time;
+      }
+
+      &:hover > path {
+        fill: $btn-hover;
+      }
+    }
+  }
+}

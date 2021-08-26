@@ -1,0 +1,189 @@
+@import './_base';
+@import './_animations';
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family:"Public Sans",sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: $body-bg-color;
+  color: $txt-color;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: clamp(15px, 6vw, 1.7rem);
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+a {
+  color: $txt-color;
+  font-size: $font-size;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.active {
+  color: $btn-hover !important;
+  font-weight: 900;
+}
+
+.custom-border {
+  border-top: 1px solid $custom-border-color;
+  border-bottom: 1px solid $custom-border-color;
+  padding: $s-y-3;
+}
+
+.custom-border-top {
+  border-top: 1px solid $custom-border-color;
+  margin: 3rem 0;
+  padding: $s-y-3;
+}
+
+.custom-border-bottom {
+  border-bottom: 1px solid $custom-border-color;
+  margin: 3rem 0;
+  padding: $s-y-3;
+}
+
+.projects-border-divider {
+  border: 1px solid $custom-border-color;
+  margin: $s-y-3;
+}
+
+.type-two-link {
+  border: 1px solid $txt-color;
+  display: inline-block;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  padding: .7rem 2rem;
+  width: fit-content;
+  transition: $transition-time;
+}
+
+.type-two-link:hover {
+  background-color: $txt-color;
+  color: $body-bg-color;
+  transition: $transition-time;
+}
+
+/***********************************************
+** Common styles for ALL the pages - Tablet
+***********************************************/
+@media (min-width: 768px) {
+/*
+** Top Navbar
+*/
+#top-navbar {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+#burger-icon {
+  display: none;
+}
+
+#close-icon {
+  display: none;
+}
+
+#nav-list {
+  background-color: transparent;
+  display: flex;
+  opacity: 1;
+  padding: 1rem;
+  position: static;
+  width: auto;
+  transform: translatey(0);
+}
+
+#nav-list li {
+  margin: 0;
+  text-align: center;
+}
+
+#nav-list li a {
+  color: $txt-color;
+  margin-left: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/*
+** Call to Action
+*/
+#cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+#cta .custom-border {
+  display: block;
+  height: 0;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+#cta h1 {
+  width: 350px;
+}
+
+#cta .type-two-link {
+  margin: 0;
+  text-align: center;
+}
+
+/*
+** Footer
+*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+}
+
+/***********************************************
+** Common styles for ALL the pages - Desktop
+***********************************************/
+@media (min-width: 1080px) {
+/*
+** Wrapper
+*/
+#wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+}

@@ -1,0 +1,47 @@
+@import '@/assets/scss/index.scss';
+
+#top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  position: relative;
+
+
+  svg:hover {
+    path {
+      fill: $btn-hover;
+      transition: $transition-time;
+    }
+  }
+
+  #nav-list {
+    background-color: $navbar-footer-bg-color;
+    gap: 1.2rem;
+    list-style: none;
+    padding: 1rem 0;
+    position: absolute;
+    top: 50px;
+    text-transform: uppercase;
+    // transition: $transition-time;
+    width: 100%;
+    z-index: 999;
+
+    li {
+      margin: 2rem 2rem;
+      text-align: center;
+      
+      a {
+        color: $links-color;
+        font-weight: 600;
+        transition: $transition-time;
+        
+        &:hover {
+          color: $links-color-hover-active;
+          transition: $transition-time;
+        }
+      }
+    }
+  }
+}
+

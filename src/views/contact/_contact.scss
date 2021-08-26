@@ -1,0 +1,168 @@
+@import '@/assets/scss/index.scss';
+
+.get-in-touch .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  svg path {
+    fill: $txt-color;
+    transition: $transition-time;
+  }
+
+  svg:hover>path {
+    fill: $btn-hover;
+    transition: $transition-time;
+  }
+}
+
+/*
+** Contact me
+*/
+#contact-form label {
+  display: block;
+  font-size: .8rem;
+  margin-bottom: 10px;
+}
+
+#name-input,
+#email-input,
+#message-input {
+  background-color: $form-input-bg-color;
+  border: none;
+  border-radius: 2px;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+#message-input {
+  height: 100px;
+}
+
+#email-submit {
+  background-color: $btn-bg-color;
+  border: none;
+  border-radius: 2px;
+  color: $body-bg-color;
+  cursor: pointer;
+  height: 35px;
+  width: min(50%, 210px);
+  text-transform: uppercase;
+  transition: $transition-time;
+}
+
+#email-submit:hover {
+  background-color: $btn-hover;
+  transition: $transition-time;
+}
+
+#my-form-status {
+  border-radius: 3px;
+  margin: 1rem;
+  opacity: 0;
+  text-align: center;
+
+  &.success {
+    animation: my-form-status $transition-time ease forwards;
+    background-color: var(--form-status-success);
+    color: $btn-txt-color;
+  }
+
+  &.error {
+    animation: my-form-status $transition-time ease forwards;
+    background-color: var(--form-status-error);
+    color: $btn-txt-color;
+  }
+}
+
+@keyframes my-form-status {
+  15% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  66% {
+    opacity: 1;
+    pointer-events: none;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+
+  /*
+** Contact form
+*/
+  #contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .name-div {
+    grid-column: 1;
+  }
+
+  .email-div {
+    grid-column: 2;
+
+  }
+
+  .message-div {
+    grid-column: 1 / span 2;
+  }
+
+  .email-submit {
+    grid-row: 3;
+  }
+
+  #my-form-status {
+    grid-column: 1 / span 2;
+  }
+
+}
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+
+  /*
+** Get in Touch
+*/
+  .get-in-touch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .social-media {
+      grid-column: 2;
+    }
+  }
+
+
+
+  /*
+** Contact me
+*/
+  .contact-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact-form {
+    display: block;
+  }
+}

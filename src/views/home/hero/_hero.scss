@@ -1,0 +1,49 @@
+@import '../../../assets/scss/index.scss';
+
+#hero-img {
+  background-image: url(../../../assets/images/homepage/hero-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  position: relative;
+}
+
+#hero-img a {
+  color: white;
+  font-size: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#hero-img a:hover {
+  color: #FEA24D;
+}
+
+#hero-content h1 {
+  margin: 1.5rem 0;
+  text-transform: none;
+}
+
+#aboutme-link {
+  border: 1px solid #27283D;
+  border-radius: 5px;
+  color: rgb(14, 20, 124);
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 140px;
+  padding: .5rem 1rem;
+  transition: .5s;
+}
+
+#aboutme-link:hover {
+  background-color: #27283D;
+  color: var(--body-bg-color);
+  transition: .5s;
+}
+
+.arrows-down {
+  margin-right: 15px;
+}

@@ -1,0 +1,30 @@
+@import '../../../assets/scss/index.scss';
+
+#mypicture {
+  background-image: url(../../../assets/images/homepage/hero-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  margin-bottom: 2rem;
+  position: relative;
+
+
+  a {
+    font-size: .5rem;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  a:hover {
+    color: green
+  }
+
+  #aboutme h1 {
+    margin-bottom: 1rem;
+  }
+
+  #aboutme p {
+    line-height: 2rem;
+  }
+}
