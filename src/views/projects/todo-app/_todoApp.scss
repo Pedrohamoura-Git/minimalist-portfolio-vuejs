@@ -1,0 +1,73 @@
+@import '@/assets/scss/index.scss';
+
+#my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#second-project-preview-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  
+  .static-preview-1 {
+    background-image: url(../../../assets/images/projects/mobile-design-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 600px;
+    width: clamp(150px, 100%, 300px);
+  }
+}
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+
+  /*
+** My Project
+*/
+  #second-project-hero-img {
+    background-image: url(../../../assets/images/detail/tablet/todo-hero-tablet.png  );
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: min(75vw, 420px);
+    width: min(100%, 720px);
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+
+  #second-project-preview-img .static-preview-2 {
+    background-image: url(../../../assets/images/detail/desktop/todo-app-desktop-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: min(75vw, 600px);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+
+  /*
+** My Project
+*/
+  #second-project-hero-img {
+    background-image: url(../../../assets/images/detail/desktop/todo-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: min(75vw, 500px);
+    width: min(100%, 100vw);
+    margin-bottom: 3rem;
+  }
+}

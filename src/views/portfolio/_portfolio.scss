@@ -1,0 +1,164 @@
+@import '../../assets/scss/index.scss';
+
+#projects {
+  margin: auto;
+  width: min(100%, 500px);
+
+  .project-img {
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+  #first-project .project-img {
+    background-image: url('../../assets/images/projects/minimalist-portfolio/minimalist-porfolio-desktop.png');
+    margin: 1rem 0;
+  }
+
+  #second-project .project-img {
+    background-image: url('../../assets/images/portfolio/todo-app-desktop-preview.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+  }
+
+  #third-project .project-img {
+    background-image: url('../../assets/images/portfolio/faq-accordion-desktop-preview.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+  }
+
+  #fourth-project .project-img {
+    background-image: url('../../assets/images/portfolio/fylo-desktop-preview.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+  }
+
+  #fifth-project .project-img {
+    background-image: url('../../assets/images/portfolio/testmonials-desktop-preview.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+  }
+
+  #full-repository {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+
+    .custom-border {
+      display: none;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: none;
+    }
+  }
+
+}
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+
+  #projects {
+    width: 100%;
+
+    #first-project,
+    #second-project,
+    #third-project,
+    #fourth-project,
+    #fifth-project {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
+      margin-top: 2rem
+    }
+
+    .project-img {
+      height: 540px;
+      width: 540px;
+      margin-bottom: 3rem;
+    }
+
+    .project-wrapper {
+      padding: 6rem 0;
+      max-width: 50%;
+    }
+
+    #cta {
+      gap: 1rem;
+    }
+
+    #full-repository {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-evenly;
+
+      .custom-border {
+        display: block;
+        height: 0;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+      }
+
+      h1 {
+        width: 365px;
+      }
+
+      .type-two-link {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+
+  /*
+** Wrapper
+*/
+  #wrapper {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .project-img {
+    height: 500px;
+  }
+
+  .project-wrapper {
+    max-width: 50%;
+  }
+}

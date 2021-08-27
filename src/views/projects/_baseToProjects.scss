@@ -1,0 +1,79 @@
+@import '../../assets/scss/base';
+
+
+/***********************************************
+** Mobile
+***********************************************/
+#my-project {
+  margin: auto;
+}
+
+.project-details-links {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.build-with {
+  color: $links-color-hover-active;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.about-project h1,
+.project-preview h1 {
+  font-weight: 400;
+}
+
+
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+
+  .project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .project-info {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+}
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+
+  #my-projects {
+    margin: auto;
+  }
+
+  .project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+    justify-content: space-between;
+  }
+
+  .project-preview {
+    grid-column: 1 / span 2;
+  }
+
+  .project-details {
+    display: block;
+  }
+
+  .about-project.custom-border-top {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}

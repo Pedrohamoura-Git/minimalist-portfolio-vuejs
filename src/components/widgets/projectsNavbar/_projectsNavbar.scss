@@ -1,0 +1,123 @@
+@import '@/assets/scss/_base';
+
+.projects-navbar {
+  border-top: 1px solid #DCDCDE;
+  border-bottom: 1px solid #DCDCDE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  padding: 0;
+
+  p {
+    transition: .2s;
+  }
+
+  a {
+    transition: .5s;
+
+    &:hover {
+      background-color: $custom-border-color;
+      transition: .5s;
+
+      p {
+        font-size: .8rem;
+        transition: .2s;
+      }
+    }
+  }
+
+  h3 {
+    font-size: clamp(14px, 5vw, 1.5rem);
+  }
+
+  p {
+    font-size: 0.7rem;
+    opacity: 50%;
+    min-width: 110px;
+  }
+
+  .previous-project,
+  .next-project {
+    width: 100%;
+  }
+
+  .custom-border {
+    border-top: 1px solid $custom-border-color;
+    border-bottom: 1px solid $custom-border-color;
+    margin-bottom: 5rem;
+  }
+
+  .previous-link {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+
+    h3 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    p {
+      grid-column: 1;
+      grid-row: 2;
+      margin-left: 2rem;
+    }
+
+    .previous-icon {
+      // background-image: url(../images/icons/2x/outline_arrow_back_ios_black_48dp.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 2;
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  .nav-divider {
+    align-self: stretch;
+    background-color: $custom-border-color;
+    min-height: 100%;
+    min-width: .2rem;
+    z-index: 21;
+  }
+
+  .next-link {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+
+    h3 {
+      grid-row: 1;
+    }
+
+    p {
+      grid-column: 1;
+      grid-row: 2;
+      margin-right: 2rem;
+    }
+
+    .next-icon {
+      // background-image: url(../images/icons/2x/outline_arrow_forward_ios_black_48dp.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-row: 2;
+      grid-column: 1;
+      justify-self: right;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
