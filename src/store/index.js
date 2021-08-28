@@ -2,14 +2,19 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    burguerIsActive: false,
+    showNavList: false,
+    showBurger: true,
   },
   mutations: {
-    mutateBurguer(state) {
-      state.burguerIsActive = !state.burguerIsActive
+    mutateShowNavList(state, payload) {
+      state.showNavList = payload
+    },
+    mutateShowBurguer(state, payload) {
+      state.showBurger = payload
     }
   },
   actions: {
+    // CRIAR UMA ACTION COM SWICTH QUE CHAME UMA MUTATION A DEPENDER DO INDICE PASSADO  
   },
   modules: {
   }

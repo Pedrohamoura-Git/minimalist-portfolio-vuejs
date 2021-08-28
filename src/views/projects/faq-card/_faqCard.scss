@@ -1,3 +1,4 @@
+@import '../baseToProjects';
 @import '@/assets/scss/index.scss';
 
 #my-project {
@@ -14,7 +15,7 @@
   padding: 2rem;
   
   .static-preview-1 {
-    background-image: url(../../../assets/images/projects/todo-app/mobile-design-dark.jpg);
+    background-image: url(../../../assets/images/projects/faq/faq-card-hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -28,11 +29,11 @@
 ***********************************************/
 @media (min-width: 768px) {
 
-  /*
+/*
 ** My Project
 */
   #project-hero-img {
-    background-image: url(../../../assets/images/projects/todo-app/todo-hero-tablet.png);
+    background-image: url(../../../assets/images/projects/faq/faq-card-hero-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: min(75vw, 420px);
@@ -43,7 +44,7 @@
 
 
   #project-preview-img .static-preview-2 {
-    background-image: url(../../../assets/images/projects/todo-app/todo-app-desktop-preview.jpg);
+    background-image: url(../../../assets/images/projects/faq/faq-accordion-desktop-preview.jpg);;
     background-repeat: no-repeat;
     background-size: contain;
     height: min(75vw, 600px);
@@ -63,7 +64,7 @@
 ** My Project
 */
   #project-hero-img {
-    // background-image: url(../../../assets/images/projects/todo-app/todo-hero-desktop.png);
+    background-image: url(../../../assets/images/projects/faq/faq-card-hero-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: min(75vw, 500px);

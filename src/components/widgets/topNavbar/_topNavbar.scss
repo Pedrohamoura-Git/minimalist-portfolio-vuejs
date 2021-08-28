@@ -1,4 +1,4 @@
-@import '@/assets/scss/index.scss';
+@import '../../../assets/scss/index.scss';
 
 #top-navbar {
   display: flex;
@@ -6,7 +6,6 @@
   justify-content: space-between;
   margin: 1.5rem 0;
   position: relative;
-
 
   svg:hover {
     path {
@@ -23,19 +22,41 @@
     position: absolute;
     top: 50px;
     text-transform: uppercase;
-    // transition: $transition-time;
+    transition: $transition-time;
     width: 100%;
     z-index: 999;
+
+    @include tablet {
+      background-color: transparent;
+      display: flex;
+      opacity: 1;
+      padding: 1rem;
+      position: static;
+      width: auto;
+      transform: translatey(0);
+    }
 
     li {
       margin: 2rem 2rem;
       text-align: center;
-      
+
+      @include tablet {
+        margin: 0;
+        text-align: center;
+      }
+
       a {
         color: $links-color;
         font-weight: 600;
         transition: $transition-time;
-        
+
+        @include tablet {
+          color: $txt-color;
+          font-weight: 600;
+          margin-left: 2.5rem;
+          text-transform: uppercase;
+        }
+
         &:hover {
           color: $links-color-hover-active;
           transition: $transition-time;
@@ -44,4 +65,3 @@
     }
   }
 }
-

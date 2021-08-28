@@ -1,0 +1,61 @@
+#project-preview-img {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#project-preview-img .static-preview-1 {
+  background-image: url(../../../assets/images/projects/testimonials/solution-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 1000px;
+  width: clamp(150px, 100%, 300px);
+}
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+
+  /*
+** My Project
+*/
+  #project-hero-img {
+    background-image: url(../../../assets/images/projects/testimonials/testimonials-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: min(45vw, 500px);
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+
+
+  #project-preview-img .static-preview-2 {
+    background-image: url(../../../assets/images/projects/testimonials/desktop-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: min(75vw, 600px);
+    width: min(100%, 700px);
+  }
+}
+
+
+/***********************************************
+** Desktop
+***********************************************/
+@media (min-width: 1080px) {
+
+  /*
+** My Project
+*/
+  #project-hero-img {
+    background-image: url(../../../assets/images/projects/testimonials/testimonials-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: min(35vw, 600px);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

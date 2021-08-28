@@ -1,5 +1,5 @@
 <template>
-<button class="hamburger hamburger--collapse" :class="{'is-active' : burguerIsActive}" type="button" @click="changeBurguerState">
+<button class="hamburger hamburger--collapse" :class="{'is-active' : showNavList}" type="button" @click="changeShowNavList(!this.showNavList)">
   <span class="hamburger-box">
     <span class="hamburger-inner" />
   </span>
@@ -13,13 +13,13 @@ export default {
     };
   },
   computed: {
-    burguerIsActive() {
-      return this.$store.state.burguerIsActive
+    showNavList() {
+      return this.$store.state.showNavList
     }
   },
   methods: {
-    changeBurguerState() {
-      this.$store.commit('mutateBurguer')
+    changeShowNavList(payload) {
+      this.$store.commit('mutateShowNavList', payload)
     }
   }
 };

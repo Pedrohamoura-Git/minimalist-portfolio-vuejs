@@ -16,3 +16,19 @@ $txt-color: hsl(200, 15%, 8%);
 $links-color: #FAFAFA;
 $txt-color-navbar-footer: #FAFAFA;
 $links-color-hover-active: #5FB4A2;
+
+
+
+//Medium Screen - 768 to 992 screen size
+@mixin desktop{
+  @media only screen and (min-width: 1080px) {
+      @content;
+  }
+}
+
+//Medium Screen - 575 to 767 screen size
+@mixin tablet{
+  @media only screen and (min-width: 768px) {
+      @content;
+  }
+}

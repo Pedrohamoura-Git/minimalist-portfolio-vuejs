@@ -1,5 +1,4 @@
-@import '../../../assets/scss/index.scss';
-
+@import "../../../assets/scss/index.scss";
 
 footer {
   background-color: $navbar-footer-bg-color;
@@ -10,17 +9,20 @@ footer {
   justify-content: center;
   padding: 3rem 0;
   text-align: center;
-    
-  #footer-logo { 
-    svg{
-      path { 
-        fill: $body-bg-color; 
+
+  #footer-logo {
+    svg {
+      path {
+        fill: $body-bg-color;
         transition: $transition-time;
       }
+
       &:hover {
-        path { fill: $links-color-hover-active; } 
+        path {
+          fill: $links-color-hover-active;
+        }
       }
-    } 
+    }
   }
 
   #footer-links a {
@@ -28,26 +30,41 @@ footer {
     letter-spacing: 2px;
     line-height: 4rem;
     transition: $transition-time;
-    
+
     &:hover {
       color: $links-color-hover-active;
     }
   }
-  
+
   .social-media {
     display: flex;
     gap: 2rem;
     align-items: center;
-  
+
     svg {
       path {
         fill: $body-bg-color;
         transition: $transition-time;
       }
 
-      &:hover > path {
+      &:hover>path {
         fill: $btn-hover;
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  #footer-links {
+    display: flex;
+    gap: 1rem;
   }
 }

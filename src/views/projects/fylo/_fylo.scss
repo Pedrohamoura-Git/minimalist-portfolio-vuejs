@@ -1,0 +1,50 @@
+@import '../baseToProjects';
+@import '@/assets/scss/index.scss';
+
+/***********************************************
+** Mobile
+***********************************************/
+/*
+** My project
+*/
+#project-preview-img {
+  display: flex;
+  // align-items: top;
+  justify-content: space-between;
+  padding: 2rem;
+  
+  .static-preview-1 {
+    background-image: url(../../..//assets/images/projects/fylo/fylo-hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 3400px;
+    width: clamp(150px, 100%, 300px);
+  }
+}
+
+/***********************************************
+** Tablet
+***********************************************/
+@media (min-width: 768px) {
+
+  /*
+** My Project
+*/
+  #project-hero-img {
+    background-image: url(../../..//assets/images/projects/fylo/fylo-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: min(45vw, 500px);
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  #project-preview-img .static-preview-2 {
+    background-image: url(../../..//assets/images/projects/fylo/fylo-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: min(75vw, 900px);
+    width: min(100%, 500px);
+  }
+}

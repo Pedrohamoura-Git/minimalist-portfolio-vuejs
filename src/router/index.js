@@ -66,8 +66,8 @@ const routes = [
   //   path: "/faq-card",
   //   name: "Faq Card",
   //   component: FaqCard,
-  // },  
-  
+  // },
+
 ];
 
 const router = createRouter({

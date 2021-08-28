@@ -1,6 +1,6 @@
 <template>
   <article id="my-project">
-    <div id="first-project-hero-img"></div>
+    <div id="project-hero-img"></div>
 
     <section class="project-content custom-border-top">
       <div class="project-details">
@@ -56,7 +56,7 @@
 
       <div class="project-preview custom-border-top">
         <h1>Preview do projeto</h1>
-        <div id="first-project-preview-img">
+        <div id="project-preview-img">
           <div class="static-preview-1"></div>
           <div class="static-preview-2"></div>
         </div>
@@ -78,4 +78,4 @@ export default {
 };
 </script>
 
-<style lang="scss" src="../_baseToProjects.scss" scoped />
+<style lang="scss" src="./_myPortfolio.scss" scoped />

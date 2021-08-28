@@ -11,7 +11,7 @@
         </svg>
       </router-link>
     </div>
-    <Burger />
+    <Burger v-if="showBurger" />
     <NavList />
   </nav>
 </template>
@@ -22,6 +22,53 @@ import NavList from "./NavList.vue";
 
 export default {
   components: { Burger, NavList },
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
+  created() {
+    if (this.windowWidth >= 768) {
+      this.changeShowNavList(true);
+      this.changeShowBurger(false);
+    } else {
+      this.changeShowNavList(false);
+      this.changeShowBurger(true);
+    }
+  },
+  mounted() {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth;
+    };
+  },
+  computed: {
+    showNavList() {
+      return this.$store.state.showNavList;
+    },
+    showBurger() {
+      return this.$store.state.showBurger;
+    },
+  },
+  watch: {
+    windowWidth: function() {
+      if (this.windowWidth >= 768) {
+        this.changeShowNavList(true);
+        this.changeShowBurger(false);
+      } else {
+        this.changeShowNavList(false);
+        this.changeShowBurger(true);
+      }
+    },
+  },
+  methods: {
+    changeShowNavList(payload) {
+      this.$store.commit("mutateShowNavList", payload);
+    },
+    changeShowBurger(payload) {
+      this.$store.commit("mutateShowBurguer", payload);
+    },
+    responsiveNavbar() {},
+  },
 };
 </script>
 
