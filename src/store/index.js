@@ -14,7 +14,7 @@ export default createStore({
     }
   },
   actions: {
-    // CRIAR UMA ACTION COM SWICTH QUE CHAME UMA MUTATION A DEPENDER DO INDICE PASSADO  
+    // CRIAR UMA ACTION COM SWICTH QUE CHAME UMA MUTATION A DEPENDER DO INDICE PASSADO 
   },
   modules: {
   }

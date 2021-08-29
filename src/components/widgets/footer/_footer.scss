@@ -10,6 +10,13 @@ footer {
   padding: 3rem 0;
   text-align: center;
 
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
   #footer-logo {
     svg {
       path {
@@ -25,14 +32,21 @@ footer {
     }
   }
 
-  #footer-links a {
-    color: $links-color;
-    letter-spacing: 2px;
-    line-height: 4rem;
-    transition: $transition-time;
+  #footer-links {
+    @include tablet {
+      display: flex;
+      gap: 1rem;
+    }
 
-    &:hover {
-      color: $links-color-hover-active;
+    & a {
+      color: $links-color;
+      letter-spacing: 2px;
+      line-height: 4rem;
+      transition: $transition-time;
+
+      &:hover {
+        color: $links-color-hover-active;
+      }
     }
   }
 
@@ -51,20 +65,5 @@ footer {
         fill: $btn-hover;
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-
-  #footer-links {
-    display: flex;
-    gap: 1rem;
   }
 }

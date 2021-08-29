@@ -11,7 +11,7 @@
         <router-link :to="{name: 'My Portfolio'}" class="type-two-link">ver projeto</router-link>
       </div>
     </section>
-
+<!-- CRIAR UM OBJETO QUE RENDERIZA OS PROJETOS EM ORDEM  -->
     <div class="projects-border-divider"></div>
 
     <section id="second-project">
@@ -107,3 +107,6 @@ export default {
 </script>
 
 <style lang="scss" src="./_portfolio.scss" scoped />
+
+
+// CRIAR UMA ARRAY DE OBJETOS COM AS INFORMAÇÕES DE CADA PROJETO: TÍTULO, IMAGEM, RESUMO, E LINK.
