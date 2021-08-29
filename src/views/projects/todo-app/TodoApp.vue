@@ -1,6 +1,5 @@
 <template>
   <article id="my-project">
-    <div id="project-hero-img"></div>
 
     <section class="project-content custom-border-top">
       <div class="project-details">

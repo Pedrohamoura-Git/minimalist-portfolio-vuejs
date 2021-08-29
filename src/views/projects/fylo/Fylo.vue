@@ -1,6 +1,5 @@
 <template>
   <article id="my-project">
-    <div id="project-hero-img"></div>
 
     <section class="project-content custom-border-top">
       <div class="project-details">
@@ -33,7 +32,7 @@
           >
         </div>
       </div>
-      <div class="about-project custom-border-top">
+      <div class="project-description custom-border-top">
         <div class="project-bg">
           <h1>Sobre o projeto</h1>
           <p>
@@ -49,13 +48,13 @@
       <div class="project-preview custom-border-top">
         <h1>Preview do projeto</h1>
         <div id="project-preview-img">
-          <div class="static-preview-1"></div>
-          <div class="static-preview-2"></div>
+          <div class="static-preview-1" />
+          <div class="static-preview-2" />
         </div>
       </div>
     </section>
 
-    <ProjectsNavbar :previousComponent="'Faq Card'" :nextComponent="''"/>
+    <ProjectsNavbar :previousComponent="'Faq Card'" :nextComponent="'Testimonials'"/>
   </article>
 </template>
 

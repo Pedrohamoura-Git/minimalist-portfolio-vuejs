@@ -28,20 +28,6 @@
 ***********************************************/
 @media (min-width: 768px) {
 
-  /*
-** My Project
-*/
-  #project-hero-img {
-    background-image: url(../../../assets/images/projects/todo-app/todo-hero-tablet.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: min(75vw, 420px);
-    width: min(100%, 720px);
-    margin: 0 auto;
-    margin-bottom: 3rem;
-  }
-
-
   #project-preview-img .static-preview-2 {
     background-image: url(../../../assets/images/projects/todo-app/todo-app-desktop-preview.jpg);
     background-repeat: no-repeat;
@@ -50,24 +36,5 @@
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-  }
-}
-
-
-/***********************************************
-** Desktop
-***********************************************/
-@media (min-width: 1080px) {
-
-  /*
-** My Project
-*/
-  #project-hero-img {
-    // background-image: url(../../../assets/images/projects/todo-app/todo-hero-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: min(75vw, 500px);
-    width: min(100%, 100vw);
-    margin-bottom: 3rem;
   }
 }
