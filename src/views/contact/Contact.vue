@@ -66,7 +66,7 @@
     <h1>Entre em Contato</h1>
 
     <!-- <form action="https://formspree.io/f/myylpbqk" method="POST" id="contact-form"> -->
-    <form id="contact-form" name="contact" method="POST" data-netlify="true">
+    <!-- <form id="contact-form" name="contact" method="POST" data-netlify="true">
       <div class="name-div">
         <label for="name-input">Nome</label>
         <input
@@ -98,7 +98,32 @@
       <input type="submit" value="Enviar Email" id="email-submit" required />
       <p id="my-form-status">temporary text</p>
       <div data-netlify-recaptcha="true"></div>
+    </form> -->
+
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name"/></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email"/></label>
+      </p>
+      <p>
+        <label
+          >Your Role:
+          <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label
+        >
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
     </form>
+    <div data-netlify-recaptcha="true"></div>
   </section>
 </template>
 
