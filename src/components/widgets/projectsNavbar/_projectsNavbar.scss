@@ -17,16 +17,16 @@
 
   a {
     transition: $transition-time;
-    
-      h3 {
-        font-size: clamp(14px, 5vw, 1.5rem);
-      }
-    
-      p {
-        font-size: 0.7rem;
-        opacity: 50%;
-        min-width: 110px;
-      }
+
+    h3 {
+      font-size: clamp(14px, 5vw, 1.5rem);
+    }
+
+    p {
+      font-size: 0.7rem;
+      opacity: 50%;
+      min-width: 110px;
+    }
 
     &:hover {
       background-color: $custom-border-color;
@@ -57,6 +57,7 @@
     width: 100%;
     padding: 1rem;
     text-align: left;
+    transition: $transition-time;
 
     h3 {
       grid-column: 1;
@@ -79,6 +80,14 @@
       justify-self: left;
       height: 25px;
       width: 25px;
+    }
+
+    &:hover {
+      .previous-icon {
+        height: 30px;
+        width: 30px;
+        transition: $transition-time;
+      }
     }
   }
 
@@ -120,6 +129,14 @@
       justify-self: right;
       height: 25px;
       width: 25px;
+    }
+
+    &:hover {
+      .next-icon {
+        height: 30px;
+        width: 30px;
+        transition: $transition-time;
+      }
     }
   }
 }

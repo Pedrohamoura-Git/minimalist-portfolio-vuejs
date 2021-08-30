@@ -63,7 +63,7 @@
     </section>
 
     <ProjectsNavbar
-      :previousComponent="''"
+      :previousComponent="'Testimonials'"
       :nextComponent="'Todo App'"
     />
   </article>
