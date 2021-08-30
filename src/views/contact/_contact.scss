@@ -1,168 +1,177 @@
 @import '@/assets/scss/index.scss';
 
-.get-in-touch .social-media {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 2rem;
-
-  svg path {
-    fill: $txt-color;
-    transition: $transition-time;
-  }
-
-  svg:hover>path {
-    fill: $btn-hover;
-    transition: $transition-time;
+.contact-me {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/*
-** Contact me
-*/
-#contact-form label {
-  display: block;
-  font-size: .8rem;
-  margin-bottom: 10px;
+.custom-border-top {
+  margin: 1rem 0;
+  padding: 1.5rem 0;
 }
 
-#name-input,
-#email-input,
-#message-input {
-  background-color: $form-input-bg-color;
-  border: none;
-  border-radius: 2px;
-  height: 45px;
-  width: 100%;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
 
-#message-input {
-  height: 100px;
-}
+.get-in-touch {
 
-#email-submit {
-  background-color: $btn-bg-color;
-  border: none;
-  border-radius: 2px;
-  color: $body-bg-color;
-  cursor: pointer;
-  height: 35px;
-  width: min(50%, 210px);
-  text-transform: uppercase;
-  transition: $transition-time;
-}
-
-#email-submit:hover {
-  background-color: $btn-hover;
-  transition: $transition-time;
-}
-
-#my-form-status {
-  border-radius: 3px;
-  margin: 1rem;
-  opacity: 0;
-  text-align: center;
-
-  &.success {
-    animation: my-form-status $transition-time ease forwards;
-    background-color: var(--form-status-success);
-    color: $btn-txt-color;
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  &.error {
-    animation: my-form-status $transition-time ease forwards;
-    background-color: var(--form-status-error);
-    color: $btn-txt-color;
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    @include tablet {
+      justify-content: end;
+      gap: 2rem;
+    }
+
+    @include desktop {
+      grid-column: 2;
+    }
+
+    svg path {
+      fill: $txt-color;
+      transition: $transition-time;
+    }
+
+    svg:hover>path {
+      fill: $btn-hover;
+      transition: $transition-time;
+    }
   }
 }
 
-@keyframes my-form-status {
-  15% {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  66% {
-    opacity: 1;
-    pointer-events: none;
-  }
-
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-
-
-/***********************************************
-** Tablet
-***********************************************/
-@media (min-width: 768px) {
-
-  /*
-** Contact form
-*/
-  #contact-form {
+#contact-form {
+  @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 
+  @include desktop {
+    display: block;
+  }
+
+  label {
+    display: block;
+    font-size: .8rem;
+    margin-bottom: 10px;
+  }
+
   .name-div {
-    grid-column: 1;
-  }
+    @include tablet {
+      grid-column: 1;
+    }
 
-  .email-div {
-    grid-column: 2;
-
-  }
-
-  .message-div {
-    grid-column: 1 / span 2;
-  }
-
-  .email-submit {
-    grid-row: 3;
-  }
-
-  #my-form-status {
-    grid-column: 1 / span 2;
-  }
-
-}
-
-
-/***********************************************
-** Desktop
-***********************************************/
-@media (min-width: 1080px) {
-
-  /*
-** Get in Touch
-*/
-  .get-in-touch {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    .social-media {
-      grid-column: 2;
+    #name-input {
+      background-color: $form-input-bg-color;
+      border: none;
+      border-radius: 2px;
+      height: 45px;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding: 1rem;
     }
   }
 
+  .email-div {
+    @include tablet {
+      grid-column: 2;
+    }
 
-
-  /*
-** Contact me
-*/
-  .contact-me {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    #email-input {
+      background-color: $form-input-bg-color;
+      border: none;
+      border-radius: 2px;
+      height: 45px;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
   }
 
-  #contact-form {
-    display: block;
+  .message-div {
+    @include tablet {
+      grid-column: 1 / span 2;
+    }
+
+    #message-input {
+      background-color: $form-input-bg-color;
+      border: none;
+      border-radius: 2px;
+      height: 100px;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+  }
+
+  .email-submit {
+    @include tablet {
+      grid-row: 3;
+    }
+  }
+
+  #email-submit {
+    background-color: $btn-bg-color;
+    border: none;
+    border-radius: 2px;
+    color: $body-bg-color;
+    cursor: pointer;
+    height: 35px;
+    width: min(50%, 210px);
+    text-transform: uppercase;
+    transition: $transition-time;
+
+    &:hover {
+      background-color: $btn-hover;
+      transition: $transition-time;
+    }
+  }
+
+  #my-form-status {
+    border-radius: 3px;
+    margin: 1rem;
+    opacity: 0;
+    text-align: center;
+
+    &.success {
+      animation: my-form-status $transition-time ease forwards;
+      background-color: var(--form-status-success);
+      color: $btn-txt-color;
+    }
+
+    &.error {
+      animation: my-form-status $transition-time ease forwards;
+      background-color: var(--form-status-error);
+      color: $btn-txt-color;
+    }
+
+    @include tablet {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  @keyframes my-form-status {
+    15% {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    66% {
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
   }
 }

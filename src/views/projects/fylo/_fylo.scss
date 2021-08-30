@@ -1,36 +1,33 @@
 @import '../baseToProjects';
 @import '@/assets/scss/index.scss';
 
-/***********************************************
-** Mobile
-***********************************************/
-/*
-** My project
-*/
+#my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #project-preview-img {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   
+  @include tablet {
+  
+    & .static-preview-2 {
+      background-image: url(../../..//assets/images/projects/fylo/fylo-desktop.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: min(75vw, 900px);
+      width: min(100%, 500px);
+    }
+  }
   .static-preview-1 {
     background-image: url(../../..//assets/images/projects/fylo/fylo-hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 3400px;
     width: clamp(150px, 100%, 300px);
-  }
-}
-
-/***********************************************
-** Tablet
-***********************************************/
-@media (min-width: 768px) {
-
-  #project-preview-img .static-preview-2 {
-    background-image: url(../../..//assets/images/projects/fylo/fylo-desktop.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: min(75vw, 900px);
-    width: min(100%, 500px);
   }
 }

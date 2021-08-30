@@ -1,9 +1,16 @@
-#container {
+@import './assets/scss/index';
 
+#container {
   #wrapper {
     margin: 0 auto;
     width: 90%;
+
+    @include tablet {
+      width: 85%;
+    }
+
+    @include desktop {
+      width: 75%;
+    }
   }
 }
-
-

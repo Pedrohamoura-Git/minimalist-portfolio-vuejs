@@ -66,7 +66,7 @@
     <h1>Entre em Contato</h1>
 
     <!-- <form action="https://formspree.io/f/myylpbqk" method="POST" id="contact-form"> -->
-    <form name="contact" method="POST" data-netlify="true">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true">
       <div class="name-div">
         <label for="name-input">Nome</label>
         <input

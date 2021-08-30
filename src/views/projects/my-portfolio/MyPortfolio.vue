@@ -15,7 +15,7 @@
         <p class="build-with">
           Design Interativo / Responsivo
           <br />
-          HTML / CSS / JS
+          HTML / CSS / SASS / VUE.JS / VUEX / VUE-ROUTER
         </p>
 
         <div class="project-details-links">

@@ -6,17 +6,14 @@
         <h1>TO-DO APP</h1>
         <div class="project-info">
           <p>
-            Neste projeto eu precisei construir um app totalmente responsivo
-            baseado no design fornecido. Eu usei HTML semântico, junto com CSS
-            Grid e JavaScript em todas as partes interativas. O usuário consegue
-            adicionar, remover, marcar e filtrar as notas. Além de mudar o tema
-            para escuro ou claro a medida que desejar.
+            Este foi o meu primeiro projeto desenvolvido com Vue.js e foi uma ótima oportunidade para pôr em prática os meus conhecimentos em VueX e Sass.
+            O usuário consegue adicionar, remover, marcar e filtrar as notas e alterar o tema para escuro ou claro a medida que desejar. Todas as alterações feitas pelo usuário ficam salvas no <em>Local Storage</em>.
           </p>
         </div>
         <p class="build-with">
           Design Interativo / Responsivo
           <br />
-          HTML / CSS / JS
+          HTML / CSS / SASS / VUE.JS
         </p>
         <div class="project-details-links">
           <a

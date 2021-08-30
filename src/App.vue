@@ -2,7 +2,7 @@
   <div id="container">
     <main id="wrapper">
       <TopNavbar />
-      <router-view />
+        <router-view />
     </main>
     <Footer />
   </div>
