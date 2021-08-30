@@ -37,9 +37,9 @@ a {
   text-transform: uppercase;
 }
 
-.active {
+.active-link {
   color: $btn-hover !important;
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 .custom-border {

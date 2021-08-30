@@ -1,7 +1,7 @@
 <template>
   <nav id="top-navbar">
     <div class="nav-logo">
-      <router-link :to="{ name: 'Home' }">
+      <router-link :to="{ name: 'Home' }" >
         <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
           <path
             fill="#33323D"

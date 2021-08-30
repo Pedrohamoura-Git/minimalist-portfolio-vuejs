@@ -13,9 +13,23 @@
     </div>
 
     <ul id="footer-links">
-      <li><router-link :to="{ name: 'Home' }">HOME</router-link></li>
-      <li><router-link :to="{ name: 'Portfolio' }">PORTFÓLIO</router-link></li>
-      <li><router-link :to="{ name: 'Contact' }">contatos</router-link></li>
+      <li>
+        <router-link :to="{ name: 'Home' }" exact-active-class="active-link"
+          >HOME</router-link
+        >
+      </li>
+      <li>
+        <router-link
+          :to="{ name: 'Portfolio' }"
+          exact-active-class="active-link"
+          >PORTFÓLIO</router-link
+        >
+      </li>
+      <li>
+        <router-link :to="{ name: 'Contact' }" exact-active-class="active-link"
+          >contatos</router-link
+        >
+      </li>
     </ul>
 
     <ul class="social-media">

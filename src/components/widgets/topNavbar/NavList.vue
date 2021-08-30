@@ -4,15 +4,18 @@
     <ul id="nav-list">
       <li>
         <router-link 
-        :to="{ name: 'Home' }">HOME</router-link>
+        :to="{ name: 'Home' }"
+        active-class="active-link" exact>HOME</router-link>
       </li>
       <li>
         <router-link 
-        :to="{ name: 'Portfolio' }">PORTFÓLIO</router-link>
+        :to="{ name: 'Portfolio' }"
+        active-class="active-link" exact>PORTFÓLIO</router-link>
       </li>
       <li>
         <router-link 
-        :to="{ name: 'Contact' }">contatos</router-link>
+        :to="{ name: 'Contact' }"
+        active-class="active-link" exact>contatos</router-link>
       </li>
     </ul>
   </transition>
