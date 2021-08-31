@@ -64,26 +64,17 @@
 
   <section class="contact-me custom-border-top">
     <h1>Entre em Contato</h1>
-
-    <!-- <form action="https://formspree.io/f/myylpbqk" method="POST" id="contact-form"> -->
-    <!-- <form id="contact-form" name="contact" method="POST" data-netlify="true">
+    
+    <!-- FORMSPRPEE  -->
+    <form action="https://formspree.io/f/mgerrojd" method="POST" id="contact-form">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true">
       <div class="name-div">
         <label for="name-input">Nome</label>
-        <input
-          type="text"
-          placeholder="Insira seu nome"
-          id="name-input"
-          required
-        />
+        <input type="text" name="name" placeholder="Insira seu nome" id="name-input" required/>
       </div>
       <div class="email-div">
         <label for="email-input">E-mail</label>
-        <input
-          type="email"
-          placeholder="email@exemplo.com"
-          id="email-input"
-          required
-        />
+        <input type="email" name="email" placeholder="email@exemplo.com" id="email-input" required/>
       </div>
       <div class="message-div">
         <label for="message-input">Mensagem</label>
@@ -95,13 +86,14 @@
           required
         ></textarea>
       </div>
-      <input type="submit" value="Enviar Email" id="email-submit" required />
+      <input type="submit" name="submit" value="Enviar Email" id="email-submit" required />
       <p id="my-form-status">temporary text</p>
-      <div data-netlify-recaptcha="true"></div>
-    </form> -->
+      <!-- <div data-netlify-recaptcha="true"></div> -->
+    </form>
 
-    <form name="contact" method="POST" data-netlify="true"
-    data-netlify-honeypot="bot-field">
+    <!-- NETLIFY  -->
+<!-- 
+    <form name="contact" method="POST" data-netlify="true">
       <p>
         <label>Your Name: <input type="text" name="name"/></label>
       </p>
@@ -124,7 +116,7 @@
         <button type="submit">Send</button>
       </p>
     </form>
-    <div data-netlify-recaptcha="true"></div>
+    <div data-netlify-recaptcha="true"></div> -->
   </section>
 </template>
 
