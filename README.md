@@ -35,24 +35,14 @@ Your users should be able to:
 
   *OBS: THE IMAGES MAY NOT BE IN THE SAME SCALE.*
 
-# MODEL - Frontend Mentor -  Minimalist Portfolio preview
-
-
-<span>
-  <img src="./design/desktop-preview.jpg" width="640px" style="display: inline">
-</span>
-<span>
-  <img src="./design/mobile-design-dark.jpg" height="640px" style="display: inline">
-</span>
-
 # MY SOLUTION - Frontend Mentor -  Minimalist Portfolio solution
 
 
 <span>
-  <img src="./design/solution-desktop-dark.png" width="640px" style="display: inline">
+  <img src="./assets/images/projects/minimalist-portfolio/minimalist-porfolio-desktop.png" width="640px" style="display: inline">
 </span>
 <span>
-  <img src="./design/solution-mobile-dark.png" height="640px" style="display: inline">
+  <img src="./src/assets/images/projects/minimalist-portfolio/minimalist-porfolio-mobile.png" height="640px" style="display: inline">
 </span>
 
 
