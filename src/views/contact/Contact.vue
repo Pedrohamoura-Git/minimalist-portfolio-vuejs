@@ -67,7 +67,6 @@
     
     <!-- FORMSPRPEE  -->
     <form action="https://formspree.io/f/mgerrojd" method="POST" id="contact-form">
-    <form id="contact-form" name="contact" method="POST" data-netlify="true">
       <div class="name-div">
         <label for="name-input">Nome</label>
         <input type="text" name="name" placeholder="Insira seu nome" id="name-input" required/>
