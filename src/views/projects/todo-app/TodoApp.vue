@@ -17,13 +17,13 @@
         </p>
         <div class="project-details-links">
           <a
-            href="https://pedro-todo-app.netlify.app"
+            href="https://pedro-vuejs-todo-app.netlify.app"
             class="type-two-link"
             target="_blank"
             >Ver site</a
           >
           <a
-            href="https://github.com/Pedrohamoura-Git/Frontend-Mentor-Challenges/tree/main/Javascript%2C%20HTML%20%26%20CSS/Intermediate/todo-app-main"
+            href="https://github.com/Pedrohamoura-Git/vuejs-todo-app"
             class="type-two-link"
             target="_blank"
             >Ver README</a
