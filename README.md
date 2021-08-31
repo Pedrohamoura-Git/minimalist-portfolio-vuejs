@@ -39,7 +39,7 @@ Your users should be able to:
 
 
 <span>
-  <img src="./assets/images/projects/minimalist-portfolio/minimalist-porfolio-desktop.png" width="640px" style="display: inline">
+  <img src="/src/assets/images/projects/minimalist-portfolio/minimalist-porfolio-desktop.png" width="640px" style="display: inline">
 </span>
 <span>
   <img src="./src/assets/images/projects/minimalist-portfolio/minimalist-porfolio-mobile.png" height="640px" style="display: inline">
