@@ -20,7 +20,7 @@
 
         <div class="project-details-links">
           <a
-            href="https://github.com/Pedrohamoura-Git/Frontend-Mentor-Challenges/blob/main/Javascript,%20HTML%20&%20CSS/Intermediate/minimalist-portfolio/README.md"
+            href="https://github.com/Pedrohamoura-Git/minimalist-portfolio-vuejs"
             class="type-two-link"
             target="_blank"
             >Ver README</a
