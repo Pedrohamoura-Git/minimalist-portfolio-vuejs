@@ -68,37 +68,41 @@ Your users should be able to:
 
 - Semantic HTML5 markup
 - Flexbox
-- How to use npm to install libraries
-- Swup page transition library
 - CSS custom properties
 - CSS Grid
 - CSS Animations
 - - CSS Transitions
 - - CSS Transform
+- - CSS Animate.css library 
+- - CSS CSS-animated hamburgers library
+- Sass
+- - Sass Variables
+- - Sass Mixins
+- Vue.JS
+- - VueX
+- - Vue Router
 - Mobile-first workflow
 
 ### What I learned
 
-It was a really good challenge to test my CSS and JS skills. I had to do some research to learn a little bit more about transitions, different types of selectors, dynamic backgrounds, dynamic created elements, switch theme, arrow functions, different types of event listenerns and much more.
+This project was a great opportunity to practice Vue-Router and some CSS animation libraries. The portfolio will also be useful to show my past and future projects.
 
 ### Continued development
 
-To my next project I want to test my JS skills by using an API.
+To my next project I want to test my Vue.JS skills by using an API.
 
 ### Useful resources
 
-- <a href="https://stackoverflow.com/questions/9887360/how-can-i-check-if-a-checkbox-is-checked" target="_blank" alt="">How can I check if a checkbox is checked?</a>
 - <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-self" target="_blank" alt="">align-self - CSS </a>
 - <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" alt="CSS Transitions">CSS Transitions</a>
 - <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" target="_blank" alt="Preventing images and text to be selected">Preventing images and text to be selected</a>
 - <a href="https://www.youtube.com/watch?v=vc9rgFHr098" target="_blank">HTML Form to Mail | Create Full Functional HTML Form Without Any Back-end</a>
-- <a href="https://www.youtube.com/watch?v=eVwH3VL1EsA&list=PLE64VkI3QBUtErGcNnZmGE48q6is-hZRS&index=1&t=643s" target="_blank">YouTube - Build Amazing Page Transitions In Only 12 Minutes</a>
-- <a href="https://swup.js.org/themes/overlay-theme" target="_blank" alt="">Swup Library - How it works</a>
 - <a href="https://stackoverflow.com/questions/25450600/what-does-the-svg-xmlns-attribute-do" target="_blank" alt="">What does the SVG xmlns attribute do?</a>
 - <a href="https://www.w3schools.com/graphics/svg_path.asp" target="_blank" alt="">The <path> element</a>
 - <a href="https://iconmonstr.com" target="_blank" alt="">SVG <path> Icons</a>
+- <a href="https://jonsuh.com/hamburgers/" target="_blank" alt="">Tasty CSS-animated hamburgers</a>
+- <a href="https://animate.style" target="_blank" alt="">Animate.css</a>
   
-
 ## Author
 
 - Frontend Mentor - [@Pedrohamoura-Git](https://www.frontendmentor.io/profile/Pedrohamoura-Git)
