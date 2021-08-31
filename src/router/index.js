@@ -24,18 +24,6 @@ const routes = [
     path: "/portfolio",
     name: "Portfolio",
     component: Portfolio,
-    // children: [
-    //   {
-    //     path: "todo-app",
-    //     name: "TodoApp",
-    //     component: TodoApp,
-    //   },
-    //   {
-    //     path: "my-portfolio",
-    //     name: "MyPortfolio",
-    //     component: MyPortfolio,
-    //   },
-    // ]
   },
   {
     path: "/my-portfolio",
@@ -62,12 +50,6 @@ const routes = [
     name: "Testimonials",
     component: Testimonials,
   },  
-  // {
-  //   path: "/faq-card",
-  //   name: "Faq Card",
-  //   component: FaqCard,
-  // },
-
 ];
 
 const router = createRouter({

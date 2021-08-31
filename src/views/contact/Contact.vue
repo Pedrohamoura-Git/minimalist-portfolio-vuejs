@@ -64,16 +64,32 @@
 
   <section class="contact-me custom-border-top">
     <h1>Entre em Contato</h1>
-    
+
     <!-- FORMSPRPEE  -->
-    <form action="https://formspree.io/f/mgerrojd" method="POST" id="contact-form">
+    <form
+      action="https://formspree.io/f/mgerrojd"
+      method="POST"
+      id="contact-form"
+    >
       <div class="name-div">
         <label for="name-input">Nome</label>
-        <input type="text" name="name" placeholder="Insira seu nome" id="name-input" required/>
+        <input
+          type="text"
+          name="name"
+          placeholder="Insira seu nome"
+          id="name-input"
+          required
+        />
       </div>
       <div class="email-div">
         <label for="email-input">E-mail</label>
-        <input type="email" name="email" placeholder="email@exemplo.com" id="email-input" required/>
+        <input
+          type="email"
+          name="email"
+          placeholder="email@exemplo.com"
+          id="email-input"
+          required
+        />
       </div>
       <div class="message-div">
         <label for="message-input">Mensagem</label>
@@ -85,42 +101,23 @@
           required
         ></textarea>
       </div>
-      <input type="submit" name="submit" value="Enviar Email" id="email-submit" required />
+      <br />
+      <input
+        type="submit"
+        name="submit"
+        value="Enviar Email"
+        id="email-submit"
+        required
+      />
       <p id="my-form-status">temporary text</p>
-      <!-- <div data-netlify-recaptcha="true"></div> -->
     </form>
-
-    <!-- NETLIFY  -->
-<!-- 
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name"/></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email"/></label>
-      </p>
-      <p>
-        <label
-          >Your Role:
-          <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label
-        >
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
-    <div data-netlify-recaptcha="true"></div> -->
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style lang="scss" src="./_contact.scss" />
