@@ -49,8 +49,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](#)
-- Live Site URL: [Add live site URL here](#)
+- Live Site URL: - <a href="https://pedro-meuportfolio.netlify.app" target="_blank" alt="">My portfolio</a>
 
 ## My process
 
