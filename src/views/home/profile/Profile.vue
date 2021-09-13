@@ -9,7 +9,7 @@
       <p>
         Sou um desenvolvedor júnior em busca de uma nova oportunidade no mercado de trabalho.<br>
         Eu procuro desenvolver os meus projetos respeitando as boas práticas: códigos de acordo com ás técnicas de acessibilidade, bem comentados e limpos.<br> 
-        Atualmente uso HTML, CSS e JavaScript, 
+        Atualmente uso HTML, CSS, SASS, BootStrap, JavaScript e Vue.js, 
         mas me adapto a qualquer outra ferramenta necessária para realizar o projeto.<br>
         Moro em Vitória da Conquista, BA, e estou disposto a trabalhar remotamente porque acredito que seria uma ótima oportunidade para aprender mais sobre <em><strong>Scrum, Lean, Kanban, Smart</strong></em> ou qualquer outra metodologia ágil que empresa se identifique.<br>
         Quando não estou <em>codando</em>, gosto de ler, escrever, práticar exercícios físicos e sair com os amigos.<br>
