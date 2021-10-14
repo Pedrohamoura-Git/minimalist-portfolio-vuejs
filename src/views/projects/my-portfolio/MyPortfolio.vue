@@ -63,8 +63,8 @@
     </section>
 
     <ProjectsNavbar
-      :previousComponent="'Testimonials'"
-      :nextComponent="'Todo App'"
+      :previousComponent="'Todo App'"
+      :nextComponent="'Github Profiles'"
     />
   </article>
 </template>

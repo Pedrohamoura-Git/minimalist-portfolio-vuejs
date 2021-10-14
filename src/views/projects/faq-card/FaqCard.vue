@@ -52,7 +52,9 @@
         </div>
       </div>
     </section>
-    <ProjectsNavbar :previousComponent="'Todo App'" :nextComponent="'Fylo'"/>
+    <ProjectsNavbar
+    :nextComponent="'Todo App'" 
+    :previousComponent="'Fylo'"/>
   </article>
 </template>
 

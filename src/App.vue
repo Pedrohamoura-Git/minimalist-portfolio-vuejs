@@ -14,7 +14,6 @@ import TopNavbar from "./components/widgets/topNavbar/TopNavbar.vue";
 import Footer from "./components/widgets/footer/Footer.vue";
 export default {
   components: { TopNavbar, Footer },
-  // components: { Navbar,},
   created() {
     let html = document.documentElement;
     html.className = "light";

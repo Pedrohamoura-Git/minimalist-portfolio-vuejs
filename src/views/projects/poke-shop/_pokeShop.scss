@@ -1,0 +1,48 @@
+@import '../baseToProjects';
+@import '../../../assets/scss/index.scss';
+
+#my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-info {
+  a {
+    text-transform: none;
+    text-decoration: underline;
+
+    &:hover {
+      color: $links-color-hover-active;
+    }
+  }
+}
+
+.project-preview {
+  margin: -30px;
+}
+
+#project-preview-img {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  @include tablet {
+
+    & .static-preview-2 {
+      background-image: url(../../../assets/images/projects/poke-shop/poke-shop-desktop.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: min(75vw, 600px);
+      width: min(100%, 700px);
+    }
+  }
+
+  .static-preview-1 {
+    background-image: url(../../../assets/images/projects/poke-shop/poke-shop-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: clamp(150px, 100%, 300px);
+  }
+}

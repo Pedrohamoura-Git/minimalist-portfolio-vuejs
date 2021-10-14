@@ -56,7 +56,7 @@
       </div>
     </section>
 
-    <ProjectsNavbar :previousComponent="'Fylo'" :nextComponent="'My Portfolio'"/>
+    <ProjectsNavbar :previousComponent="''" :nextComponent="'Fylo'"/>
   </article>
 </template>
 

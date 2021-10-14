@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <ProjectsNavbar :previousComponent="'My Portfolio'" :nextComponent="'Faq Card'"/>
+    <ProjectsNavbar :previousComponent="'Faq Card'" :nextComponent="'My Portfolio'"/>
   </article>
 </template>
 

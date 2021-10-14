@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <ProjectsNavbar :previousComponent="'Faq Card'" :nextComponent="'Testimonials'"/>
+    <ProjectsNavbar :previousComponent="'Testimonials'" :nextComponent="'Faq Card'"/>
   </article>
 </template>
 
