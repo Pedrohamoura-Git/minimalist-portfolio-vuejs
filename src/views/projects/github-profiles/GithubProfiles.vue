@@ -4,7 +4,7 @@
  <article id="my-project">
   <section class="project-content custom-border-top">
    <div class="project-details">
-    <h1>Poke Shop</h1>
+    <h1>GitHub Profiles</h1>
 
     <div class="project-info">
      <p>App que possibilita pesquisar os repositórios do usuário inserido. Repositórios obtidos através do consumo da RESTful API <a href="https://docs.github.com/pt/rest" alt="link para o site da API">GitHub</a>.
