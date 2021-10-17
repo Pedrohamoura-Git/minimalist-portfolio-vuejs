@@ -1,16 +1,15 @@
 # Frontend Mentor - Minimalist Portfolio
 
 <img src="./public/frontend-mentor-logo.png" width="180px">
-This is a solution to the <a href="https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE">Minimalist Portfolio</a><br><br>
+<strong><em>Frontend Mentor challenges help you improve your coding skills by building realistic projects.</em><strong/><br><br>
 
-*Frontend Mentor challenges help you improve your coding skills by building realistic projects.*
-
+- This is a solution to the <a href="https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE">Minimalist Portfolio</a><br>
+- Live Site URL: - <a href="https://pedro-meuportfolio.netlify.app" target="_blank" alt="">My portfolio</a>
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -45,11 +44,6 @@ Your users should be able to:
   <img src="./src/assets/images/projects/minimalist-portfolio/minimalist-porfolio-mobile.png" height="640px" style="display: inline">
 </span>
 
-
-
-### Links
-
-- Live Site URL: - <a href="https://pedro-meuportfolio.netlify.app" target="_blank" alt="">My portfolio</a>
 
 ## My process
 
